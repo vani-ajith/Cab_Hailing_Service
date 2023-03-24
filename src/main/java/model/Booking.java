@@ -1,29 +1,29 @@
-package Model;
+package model;
 
-public class BookingModel {
+public class Booking {
 
-    private String BookingId;
+    private String bookingId;
     private int riderUserId;
     private String carNumber;
     private String startTime;
     private String endTime;
-    private String Status;
+    private String status;
 
-    public BookingModel(String bookingId, int riderUserId, String carNumber, String startTime, String endTime, String status) {
-        BookingId = bookingId;
-        this.riderUserId = riderUserId;
-        this.carNumber = carNumber;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        Status = status;
-    }
+//    public Booking(String bookingId, int riderUserId, String carNumber, String startTime, String endTime, String status) {
+//        bookingId = bookingId;
+//        this.riderUserId = riderUserId;
+//        this.carNumber = carNumber;
+//        this.startTime = startTime;
+//        this.endTime = endTime;
+//        status = status;
+//    }
 
     public String getBookingId() {
-        return BookingId;
+        return bookingId;
     }
 
     public void setBookingId(String bookingId) {
-        BookingId = bookingId;
+        bookingId = bookingId;
     }
 
     public int getRiderUserId() {
@@ -59,10 +59,10 @@ public class BookingModel {
     }
 
     public String getStatus() {
-        return Status;
+        return status;
     }
 
     public void setStatus(String status) {
-        Status = status;
+        status = status;
     }
 }

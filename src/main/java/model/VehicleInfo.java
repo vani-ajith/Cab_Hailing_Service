@@ -1,22 +1,22 @@
-package Model;
+package model;
 
-public class VehicleInfoModel {
+public class VehicleInfo {
 
     private String carNumber;
-    private String latitude;
-    private String longitude;
+    private double latitude;
+    private double longitude;
     private String carType;
     private boolean isAvailable;
     private int driverId;
 
-    public VehicleInfoModel(String carNumber, String latitude, String longitude, String carType, boolean isAvailable, int driverId) {
-        this.carNumber = carNumber;
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.carType = carType;
-        this.isAvailable = isAvailable;
-        this.driverId = driverId;
-    }
+//    public VehicleInfo(String carNumber, String latitude, String longitude, String carType, boolean isAvailable, int driverId) {
+//        this.carNumber = carNumber;
+//        this.latitude = latitude;
+//        this.longitude = longitude;
+//        this.carType = carType;
+//        this.isAvailable = isAvailable;
+//        this.driverId = driverId;
+//    }
 
     public String getCarNumber() {
         return carNumber;
@@ -26,19 +26,19 @@ public class VehicleInfoModel {
         this.carNumber = carNumber;
     }
 
-    public String getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(String latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
-    public String getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(String longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 

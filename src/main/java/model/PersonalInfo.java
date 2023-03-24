@@ -1,24 +1,24 @@
-package Model;
+package model;
 
-public abstract class  PersonalInfoModel{
+public abstract class PersonalInfo {
 
     private String name;
     private String phoneNumber;
     private int countryCode;
     private int id;
 
-    public PersonalInfoModel(String name, String phoneNumber, int countryCode, int id) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.countryCode = countryCode;
-        this.id = id;
-    }
-
-    public PersonalInfoModel(String name, String phoneNumber, int countryCode) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.countryCode = countryCode;
-    }
+//    public PersonalInfo(String name, String phoneNumber, int countryCode, int id) {
+//        this.name = name;
+//        this.phoneNumber = phoneNumber;
+//        this.countryCode = countryCode;
+//        this.id = id;
+//    }
+//
+//    public PersonalInfo(String name, String phoneNumber, int countryCode) {
+//        this.name = name;
+//        this.phoneNumber = phoneNumber;
+//        this.countryCode = countryCode;
+//    }
 
     public String getName() {
         return name;

@@ -1,6 +1,6 @@
-package Interfaces;
+package interfaces;
 
-import Model.DriverModel;
+import model.Driver;
 
 public class DriverServiceImpl implements IDriverService{
 
@@ -11,8 +11,8 @@ public class DriverServiceImpl implements IDriverService{
     }
 
     @Override
-    public boolean register(DriverModel driverModel) {
-        storageService.saveDriver(driverModel);
+    public boolean register(Driver driver) {
+        storageService.saveDriver(driver);
         return true;
     }
 }

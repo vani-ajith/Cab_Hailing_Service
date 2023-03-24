@@ -1,6 +1,6 @@
-package Interfaces;
+package interfaces;
 
-import Model.RiderModel;
+import model.Rider;
 
 public class RiderServiceImpl implements IRiderService{
 
@@ -11,8 +11,8 @@ public class RiderServiceImpl implements IRiderService{
     }
 
     @Override
-    public boolean register(RiderModel riderModel) {
-            storageService.saveRider(riderModel);
+    public boolean register(Rider rider) {
+        storageService.saveRider(rider);
         return true;
     }
 }
